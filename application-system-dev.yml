@@ -1,0 +1,21 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address:  true
+
+spring:
+  application:
+    name: SYSTEM-SERVICE
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url:  jdbc:mysql:///hrm-system?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf8
+
+hrm:
+  swgger:
+    title:  系统管理服务
+    description:  系统管理服务接口文档
